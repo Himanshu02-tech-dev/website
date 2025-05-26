@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CA Bookbotics</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
   <header class="bg-white shadow-md p-4">
@@ -21,6 +22,36 @@
   <section class="bg-blue-100 py-20 text-center">
     <h2 class="text-4xl font-bold mb-4">Smart Financial Solutions, Global Reach</h2>
     <p class="text-lg">We help businesses stay compliant, scale efficiently, and make informed decisions</p>
+  </section>
+
+  <!-- Sliding Image + Description Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto py-16 px-6 gap-10">
+    <!-- Left: Text -->
+    <div class="md:w-1/2">
+      <h2 class="text-4xl font-bold mb-4">Together, we thrive.</h2>
+      <p class="text-lg mb-6">Together, we are focused on delivering exceptional and sustainable outcomes — for our people, our communities, and our clients.</p>
+      <a href="#about" class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 transition">
+        LEARN MORE ABOUT BOOKBOTICS
+      </a>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="md:w-1/2 w-full">
+      <div class="swiper mySwiper rounded-lg shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://source.unsplash.com/800x500/?team,office" alt="Team" class="w-full h-auto rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://source.unsplash.com/800x500/?meeting,business" alt="Meeting" class="w-full h-auto rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://source.unsplash.com/800x500/?finance,discussion" alt="Finance" class="w-full h-auto rounded-lg" />
+          </div>
+        </div>
+        <div class="swiper-pagination mt-2"></div>
+      </div>
+    </div>
   </section>
 
   <section id="services" class="py-16 max-w-6xl mx-auto px-4">
@@ -70,5 +101,19 @@
   <footer class="bg-white mt-16 p-4 text-center text-sm text-gray-500">
     © 2025 Bookbotics Global Solutions Pvt. Ltd. All rights reserved.
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
