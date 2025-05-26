@@ -1,5 +1,5 @@
 /tax-consultant/
 │
-├── a.html
+├── index.html
 ├── /assets/
 │   └── logo.png (optional)
