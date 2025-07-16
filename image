@@ -1,6 +1,7 @@
 website/
 ├── index.html
 ├── images/
+│   ├── logo.png
 │   ├── team.png
 │   ├── meeting.png
 │   ├── finance.png
